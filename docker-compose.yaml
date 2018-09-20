@@ -1,0 +1,9 @@
+version: '2'
+services:
+  grav:
+    restart: unless-stopped
+    image: grav:latest
+    ports:
+      - 80:80
+    volumes:
+      - ./local-folder-for-user:/var/www/html/user
